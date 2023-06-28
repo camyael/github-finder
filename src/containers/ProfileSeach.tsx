@@ -1,15 +1,15 @@
-import ProfilesInterface from "../interfaces/Profiles.interface";
-import Profile from "../components/Profile";
+import { IProfilesInterface } from "../interfaces/Profiles.interface";
+import SearchResult from "../components/SearchResult";
 
 interface User {
-    users: Array<ProfilesInterface>
+    users: Array<IProfilesInterface>
 }
 
 const ProfileSearch = ({users}:User) => {
     return (
        <div>
             {
-                users.map(user => <Profile key={user.id} user={user}/>)
+                users.map(user => <SearchResult key={user.id} user={user}/>)
             }
        </div>
     )
