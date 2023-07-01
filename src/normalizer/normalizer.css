@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&family=Work+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #1A1D26;
+    color: #FBFCFE;
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: ;
+}

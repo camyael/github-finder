@@ -1,19 +1,12 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Searcher from './pages/Searcher';
-import Profile from './pages/Profile';
+import './normalizer/normalizer.css';
+import Searcher from './pages/Searcher/Searcher';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Searcher/>}/>
-        <Route path='/:user' element={<Profile/>}/>
-      </Routes>
-    </BrowserRouter>
+    <Searcher/>
   )
 }
 
-export default App
+export default App;
