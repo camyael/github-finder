@@ -19,9 +19,8 @@ export const ProfileResultImg = styled.div`
     img {
         width: 140px;
         height: 140px;
-        border-radius: 140%;
-        // border-image: linear-gradient(315deg, #6E6D72 0%, #1A1D26 100%) 1;
-        border: 6px solid #fff;
+        border-radius: 50%;
+        border: 6px solid #6E6D72;
     }
 `;
 

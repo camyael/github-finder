@@ -27,18 +27,18 @@ const UserResult = ({user}:User) => {
     useEffect(() =>{
         fetch(`https://api.github.com/users/${login}`)
         .then((res) => res.json())
-        .then((data) => setProfileGithub(data))
+        .then((data) => {setProfileGithub(data)})
     }, [login])
 
     return (
         <ProfileResult>
             <ProfileResultImg>
-                <img src={profileGithub.avatar_url}/>
+                <img src={user.avatar_url}/>
             </ProfileResultImg>
             <ProfileResultInfo>
                 <ProfileResultInfoUser>
                     <p className="profileName">{profileGithub.name}</p>
-                    <p className="profileUser">{profileGithub.login}</p>
+                    <p className="profileUser">{user.login}</p>
                 </ProfileResultInfoUser>
                 <p className="profileBio">{profileGithub.bio}</p>
                 <ProfileResultInfoRepos>

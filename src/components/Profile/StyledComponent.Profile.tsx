@@ -20,6 +20,29 @@ export const ProfileContainer = styled.div`
     position: relative;
 `;
 
+export const ProfileClose = styled.button`
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: none;
+    border: 1px solid #FE6235;
+    color: #FE6235;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease all;
+
+    &:hover {
+        background: #FE6235;
+        color: #FBFCFE;
+        transform: scale(1.1);
+    }
+`;
+
 export const ProfileImg = styled.div`
     display: flex;
     justify-content: center;
@@ -28,6 +51,7 @@ export const ProfileImg = styled.div`
         width: 200px;
         height: 200px;
         border-radius: 50%;
+        border: 6px solid #6E6D72;
     }
 `;
 

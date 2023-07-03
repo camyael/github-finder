@@ -33,6 +33,7 @@ export const SearcherInput = styled.div`
         width: 100%;
         border: none;
         background: none;
+        outline:none;
     }
 
     .searcherButton {
