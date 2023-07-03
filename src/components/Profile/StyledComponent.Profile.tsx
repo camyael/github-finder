@@ -74,7 +74,7 @@ export const ProfileUserDiv = styled.div`
 `;
 
 export const ProfileDiv = styled.div`
-    width: 55vh;
+    width: 85%;
     margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;

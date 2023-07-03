@@ -13,6 +13,11 @@ export const ProfileResult = styled.div`
     &:hover {
         box-shadow: 0px 10px 56px 0px #2B2A31;
     }
+
+    @media (max-width: 768px) {
+        flex-flow: column nowrap;
+        width: 90vw;
+    }
 `;
 
 export const ProfileResultImg = styled.div`
@@ -21,6 +26,10 @@ export const ProfileResultImg = styled.div`
         height: 140px;
         border-radius: 50%;
         border: 6px solid #6E6D72;
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 15px;
     }
 `;
 
@@ -32,6 +41,11 @@ export const ProfileResultInfo = styled.div`
 
     .profileBio {
         font-size: 1.1rem;
+    }
+
+    @media (max-width: 768px) {
+        width: 90%;
+        margin: 15px 0;
     }
 `;
 

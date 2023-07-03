@@ -6,6 +6,10 @@ export const SearcherDiv = styled.div`
     align-items: center;
     width: 65%;
     margin: 0 auto;
+    
+    @media (max-width: 1024px) {
+        width: 90vw
+    }
 `;
 
 export const SearcherTitle = styled.h1`
@@ -13,6 +17,14 @@ export const SearcherTitle = styled.h1`
     font-weight: 700;
     font-size: 3.75rem;
     margin: 180px 0 40px;
+
+    @media (max-width: 1024px) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: 768px) {
+        margin: 80px 0 40px;
+    }
 `;
 
 export const SearcherInput = styled.div`
@@ -20,8 +32,12 @@ export const SearcherInput = styled.div`
     box-shadow: 0px 0px 56px 0px #6E6D72;
     display: flex;
     justify-content: space-between;
-    width: 877px;
+    width: 65vw;
     border-radius: 12px;
+
+    @media (max-width: 1024px) {
+        width: 90vw
+    }
 
     .searcherInput, .searcherButton {
         font-family: 'Work Sans', sans-serif;
@@ -58,4 +74,8 @@ export const SearcherResults = styled.span`
     text-align: right;
     font-weight: 500;
     margin: 36px 100px 36px 0;
+
+    @media (max-width: 1024px) {
+        margin: 36px 50px 36px 0;
+    }
 `;
