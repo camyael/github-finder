@@ -6,6 +6,7 @@ export const SearcherDiv = styled.div`
     align-items: center;
     width: 65%;
     margin: 0 auto;
+    min-height: 99vh;
     
     @media (max-width: 1024px) {
         width: 90vw
